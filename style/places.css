@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(75, 70, 70);
+}
+
+header {
+  position: static;
+}
+main ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+ 
+  
+}
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+#london {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.item-content {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+}
+.actions {
+  text-align: right;
+}
+.actions a {
+  color: rgb(27, 184, 223);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  
+}
+.actions a:hover {
+  background-color: rgb(114, 243, 230);
+}
